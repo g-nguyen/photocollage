@@ -11,21 +11,12 @@ $(document).ready(function(){
 		reader.readAsDataURL(input.files[0]);
 		}
 	}
-	$('#a').click(function(event) {
-	    if (!$(event.target).is('#img1')) {
-		    $(this).find("#img1").trigger('click');
+	$('.x').click(function(event) {
+	    if (!$(event.target).is('.collage')) {
+		    $(this).find(".collage").trigger('click');
 		}
 	});
-	$('#b').click(function(event) {
-	    if (!$(event.target).is('#img2')) {
-	        $(this).find("#img2").trigger('click');
-	    }
-	});
-	$('#c').click(function(event) {
-	    if (!$(event.target).is('#img3')) {
-		    $(this).find("#img3").trigger('click');
-	   }
-	});
+	
 	$(":file").change(function() {
   		readURL(this);
   		$(this).next().css('display', 'block');
