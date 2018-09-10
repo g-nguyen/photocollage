@@ -26,8 +26,32 @@ $(document).ready(function(){
 		    $(this).find("#img3").trigger('click');
 	   }
 	});
+    $('#d').click(function(event) {
+        if (!$(event.target).is('#img4')) {
+            $(this).find("#img4").trigger('click');
+        }
+    });
+    $('#e').click(function(event) {
+        if (!$(event.target).is('#img5')) {
+            $(this).find("#img5").trigger('click');
+        }
+    });
 	$(":file").change(function() {
   		readURL(this);
   		$(this).next().css('display', 'block');
 	});
+
+    var element = $("#img"); // global variable
+    var getCanvas; // global variable
+
+    $("#btn-Preview-Image").on('click', function () {
+        $('.collage').remove();
+        html2canvas(element, {
+            onrendered: function (canvas) {
+                $("#previewImage").append(canvas);
+                getCanvas = canvas;
+            }
+        });
+    });
+
 });
