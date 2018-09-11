@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>choose</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+	<script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+    <script type="text/javascript" src="coco-collage.js"></script>
+    <link rel="Stylesheet" type="text/css" href="coco-collage.css" />
+    <link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+<body>
+
+<button id="changeBtn">Change Layout</button>
+<div id="myModal" class="modal">
+	<div class="modal-content">
+	    <span class="close">&times;</span>
+	    <a target="frame1"><img src="frame/frame1.png" style="width: 200px; height: 200px;"></a>
+	    <a target="frame2"><img src="frame/frame2.png" style="width: 200px; height: 200px;"></a>
+  	</div>
+</div> 
+<script type="text/javascript">
+	var modal = document.getElementById('myModal');
+	var btn = document.getElementById("changeBtn");
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+	    modal.style.display = "block";
+	}
+
+	span.onclick = function() {
+	    modal.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+	$(document).ready(function(){
+		$("a[target='frame2']").click(function(){
+			$("body").load("frame2.html");
+		})
+	});
+</script>
+</body>
+</html>
