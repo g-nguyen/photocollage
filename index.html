@@ -1,80 +1,62 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Demo</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+	<title>choose</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+	<script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
     <script type="text/javascript" src="coco-collage.js"></script>
     <link rel="Stylesheet" type="text/css" href="coco-collage.css" />
-    <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+    <link rel="stylesheet" type="text/css" href="modal.css">
 </head>
-<style type="text/css">
-    .photo-inline {
-        position: fixed;
-        left: 28%;
-    }
-    h1 {
-        text-align: center;
-        margin-top: 120px;
-    }
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 80%; /* Full width */
-        height: 80%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-</style>
 <body>
 
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-</body>
-
-<!-- The Modal -->
+<button id="changeBtn">Change Layout</button>
 <div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close"></span>
+	<div class="modal-content">
+        <span class="close">&times;</span>
         <h1>Select a Collage Template</h1>
-        <div class="photo-inline">
-            <img id="frame1" src="frame1.png" height="100" width="100">
-            <img id="frame2" src="frame2.png" height="100" width="100">
-            <img id="frame3" src="frame3.png" height="100" width="100">
-            <img id="frame4" src="frame4.png" height="100" width="100">
-            <img id="frame5" src="frame5.png" height="100" width="100">
+        <div class="frame-image">
+            <a target="frame1"><img src="frame/frame1.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame2"><img src="frame/frame2.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame3"><img src="frame/frame3.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame4"><img src="frame/frame4.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame5"><img src="frame/frame5.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame6"><img src="frame/frame6.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame7"><img src="frame/frame7.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame8"><img src="frame/frame8.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame9"><img src="frame/frame9.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame10"><img src="frame/frame10.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame11"><img src="frame/frame11.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame12"><img src="frame/frame12.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame13"><img src="frame/frame13.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame14"><img src="frame/frame14.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame15"><img src="frame/frame15.png" style="width: 100px; height: 100px;"></a>
         </div>
-    </div>
-
+  	</div>
 </div>
-<div id="template-content" style="display: none">
-    <div id="img" style="width: 500px; height: 500px; border: 1px solid; margin-left: auto; margin-right: auto;">
-        <div id="a" style="width: 250px; height: 500px; background-color: #FFC0CB; float: left; border-right: solid 5px #F0F8FF;"> <input class="collage" type="file" style="width: 0; height: 0;"> <img style="width: 100%; height: 100%; display: none;"> </div>
-        <div id="b" style="width: 245px; height: 250px; background-color: #DDA0DD; float: right;"> <input class="collage" type="file" style="width: 0; height: 0;"> <img style="width: 100%; height: 100%; display: none;"> </div>
-        <div id="c" style="width: 245px; height: 245px; background-color: #B0E0E6; float: right; border-top: solid 5px #F0F8FF;"> <input class="collage" type="file" style="width: 0; height: 0;"> <img style="width: 100%; height: 100%; display: none;"> </div>
-    </div>
-    <input id="btn-Preview-Image" type="button" value="Preview"/>
-    <div id="previewImage">
-</div>
+<script type="text/javascript">
+	var modal = document.getElementById('myModal');
+	var btn = document.getElementById("changeBtn");
+	var span = document.getElementsByClassName("close")[0];
 
+	btn.onclick = function() {
+	    modal.style.display = "block";
+	}
 
-<script>
-    // When the user clicks the button, open the modal
-    document.getElementById("myBtn").onclick = function() {
-        $(".modal").css('display', 'block');
-    }
-    document.getElementById("frame1").onclick = function() {
-        $("#template-content").css('display', 'block');
-        $(".modal").css('display', 'none');
-    }
+	span.onclick = function() {
+	    modal.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+	$(document).ready(function(){
+		$("a[target='frame2']").click(function(){
+			$("body").load("frame2.html");
+		})
+	});
 </script>
-
+</body>
 </html>
-
