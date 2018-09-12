@@ -3,9 +3,6 @@
 <head>
 	<title>choose</title>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-	<script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
-    <script type="text/javascript" src="coco-collage.js"></script>
-    <link rel="Stylesheet" type="text/css" href="coco-collage.css" />
     <link rel="stylesheet" type="text/css" href="modal.css">
 </head>
 <body>
@@ -17,7 +14,8 @@
 	    <a target="frame1"><img src="frame/frame1.png" style="width: 200px; height: 200px;"></a>
 	    <a target="frame2"><img src="frame/frame2.png" style="width: 200px; height: 200px;"></a>
   	</div>
-</div> 
+</div>
+<div id="frame"></div> 
 <script type="text/javascript">
 	var modal = document.getElementById('myModal');
 	var btn = document.getElementById("changeBtn");
@@ -37,9 +35,14 @@
 	    }
 	}
 	$(document).ready(function(){
+		$("a[target='frame1']").click(function(){
+				$("#frame").load("frame1.html");
+				 modal.style.display = "none";
+		});
 		$("a[target='frame2']").click(function(){
-			$("body").load("frame2.html");
-		})
+				$("#frame").load("frame2.html");
+				 modal.style.display = "none";
+		});
 	});
 </script>
 </body>
