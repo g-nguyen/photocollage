@@ -1,5 +1,8 @@
-$(document).ready(function(){
+//$(document).ready(function(){
     $(":file").css("opacity", 0);
+    function collage(element){
+        element.load("index.html");
+    }
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
@@ -26,18 +29,18 @@ $(document).ready(function(){
     var getCanvas; // global variable
 
     $("#btn-Preview-Image").on('click', function () {
-        $('.collage').remove();
         html2canvas(element, {
             onrendered: function (canvas) {
                 canvas.id = "can";
                 $("#previewImage").append(canvas);
                 getCanvas = canvas;
                 var image = new Image();
+                image.id = "pic";
                 image.src = document.getElementById('can').toDataURL();
                 $('body').append(image);
-                canvas.setAttribute("style","display: none");
+                canvas.remove();
             }
         });
         
     });
-});
+//});
