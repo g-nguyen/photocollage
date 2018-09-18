@@ -3,6 +3,7 @@
 <head>
 	<title>choose</title>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+	<script type="text/javascript" src="coco-collage.js"></script>
     <link rel="stylesheet" type="text/css" href="modal.css">
 </head>
 <body>
@@ -13,26 +14,27 @@
         <span class="close">&times;</span>
         <h1>Select a Collage Template</h1>
         <div class="frame-image">
-            <a target="frame1"><img src="frame/frame1.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame2"><img src="frame/frame2.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame3"><img src="frame/frame3.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame4"><img src="frame/frame4.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame5"><img src="frame/frame5.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame6"><img src="frame/frame6.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame7"><img src="frame/frame7.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame8"><img src="frame/frame8.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame9"><img src="frame/frame9.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame10"><img src="frame/frame10.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame11"><img src="frame/frame11.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame12"><img src="frame/frame12.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame13"><img src="frame/frame13.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame14"><img src="frame/frame14.png" style="width: 100px; height: 100px;"></a>
-            <a target="frame15"><img src="frame/frame15.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame1"><img src="frame-img/frame1.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame2"><img src="frame-img/frame2.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame3"><img src="frame-img/frame3.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame4"><img src="frame-img/frame4.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame5"><img src="frame-img/frame5.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame6"><img src="frame-img/frame6.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame7"><img src="frame-img/frame7.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame8"><img src="frame-img/frame8.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame9"><img src="frame-img/frame9.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame10"><img src="frame-img/frame10.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame11"><img src="frame-img/frame11.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame12"><img src="frame-img/frame12.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame13"><img src="frame-img/frame13.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame14"><img src="frame-img/frame14.png" style="width: 100px; height: 100px;"></a>
+            <a target="frame15"><img src="frame-img/frame15.png" style="width: 100px; height: 100px;"></a>
         </div>
   	</div>
 </div>
 <div id="frame"></div>
 <script type="text/javascript">
+
 	var modal = document.getElementById('myModal');
 	var btn = document.getElementById("changeBtn");
 	var span = document.getElementsByClassName("close")[0];
@@ -52,51 +54,51 @@
 	}
 	$(document).ready(function(){
 		$("a[target='frame1']").click(function(){
-				$("#frame").load("frame1.html");
+				$("#frame").load("frame-html/frame1.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame2']").click(function(){
-				$("#frame").load("frame2.html");
+				$("#frame").load("frame-html/frame2.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame3']").click(function(){
-				$("#frame").load("frame3.html");
+				$("#frame").load("frame-html/frame3.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame4']").click(function(){
-				$("#frame").load("frame4.html");
+				$("#frame").load("frame-html/frame4.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame5']").click(function(){
-				$("#frame").load("frame5.html");
+				$("#frame").load("frame-html/frame5.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame6']").click(function(){
-				$("#frame").load("frame6.html");
+				$("#frame").load("frame-html/frame6.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame7']").click(function(){
-				$("#frame").load("frame7.html");
+				$("#frame").load("frame-html/frame7.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame8']").click(function(){
-				$("#frame").load("frame8.html");
+				$("#frame").load("frame-html/frame8.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame9']").click(function(){
-				$("#frame").load("frame9.html");
+				$("#frame").load("frame-html/frame9.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame10']").click(function(){
-				$("#frame").load("10.html");
+				$("#frame").load("frame-html/frame10.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame11']").click(function(){
-				$("#frame").load("frame11.html");
+				$("#frame").load("frame-html/frame11.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame12']").click(function(){
-				$("#frame").load("frame12.html");
+				$("#frame").load("frame-html/frame12.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='frame13']").click(function(){
@@ -104,11 +106,11 @@
 				 modal.style.display = "none";
 		});
 		$("a[target='frame14']").click(function(){
-				$("#frame").load("frame14.html");
+				$("#frame").load("frame-html/frame14.html");
 				 modal.style.display = "none";
 		});
 		$("a[target='15']").click(function(){
-				$("#frame").load("frame15.html");
+				$("#frame").load("frame-html/frame15.html");
 				 modal.style.display = "none";
 		});
 	});
