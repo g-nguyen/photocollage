@@ -1,7 +1,7 @@
 //$(document).ready(function(){
     $(":file").css("opacity", 0);
     function collage(element){
-        element.load("https://ccsqv2.dev.jp/indexx.php");
+        element.load("https://cqv3.dev.jp/indexx.php");
     }
     function readURL(input) {
         if (input.files && input.files[0]) {

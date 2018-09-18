@@ -4,56 +4,56 @@
 <head>
     <title>frame15</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-    <script type="text/javascript" src="https://ccsqv2.dev.jp/coco-collage.js"></script>
+    <script type="text/javascript" src="https://cqv3.dev.jp/coco-collage.js"></script>
     <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
 </head>
 <style type="text/css">
     #img {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         border: 1px solid;
         margin-left: auto;
         margin-right: auto;
     }
     #a {
-        width: 247px;
-        height: 300px;
+        width: 147px;
+        height: 170px;
         background-color: #FFA07A;
         float: right;
         border-left: solid 5px #F0F8FF;
         border-bottom: solid 5px #F0F8FF;
     }
     #b {
-        width: 248px;
-        height: 300px;
+        width: 148px;
+        height: 170px;
         background-color: #B0E0E6;
         float: right;
         border-bottom: solid 5px #F0F8FF;
     }
     #c {
-        width: 121px;
-        height: 195px;
+        width: 71px;
+        height: 125px;
         background-color: #B0E0E6;
         float: right;
         border-left: solid 5px #F0F8FF;
     }
     #d {
-        width: 121px;
-        height: 195px;
+        width: 72px;
+        height: 125px;
         background-color: #D8BFD8;
         float: right;
         border-left: solid 5px #F0F8FF;
     }
     #e {
-        width: 121px;
-        height: 195px;
+        width: 71px;
+        height: 125px;
         background-color: #FFA07A;
         float: right;
         border-left: solid 5px #F0F8FF;
     }
     #f {
-        width: 122px;
-        height: 195px;
+        width: 71px;
+        height: 125px;
         background-color: #FFB6C1;
         float: right;
     }

@@ -5,52 +5,51 @@
     <title>frame4</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
-    <script type="text/javascript" src="https://ccsqv2.dev.jp/coco-collage.js"></script>
+    <script type="text/javascript" src="https://cqv3.dev.jp/coco-collage.js"></script>
 </head>
 <style type="text/css">
     #img {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         border: 1px solid;
         margin-left: auto;
         margin-right: auto;
         background-color: #E0FFFF;
     }
     #a {
-        width: 295px;
-        height: 273px;
+        width: 156px;
+        height: 147px;
         background-color: #FFC0CB;
-        border-radius: 132px;
+        border-radius: 75px;
         margin-top: 10px;
         margin-left: 10px;
         float: left;
     }
     #b {
-        width: 130px;
-        height: 130px;
+        width: 95px;
+        height: 95px;
         background-color: #FFA07A;
-        border-radius: 66px;
-        margin-top: 76px;
-        margin-right: 28px;
+        border-radius: 50px;
+        margin-top: 25px;
+        margin-right: 23px;
         float: right;
     }
     #c{
-        width: 222px;
-        height: 207px;
+        width: 126px;
+        height: 115px;
         background-color: #DDA0DD;
-        border-radius: 104px;
+        border-radius: 58px;
         float: right;
-        margin-right: 28px;
-        margin-top: -13px;
+        margin-right: 17px;
     }
     #d{
-        width: 160px;
-        height: 160px;
+        width: 100px;
+        height: 100px;
         background-color: #DAA520;
-        border-radius: 81px;
+        border-radius: 52px;
         float: right;
-        margin-right: 50px;
-        margin-top: 26px;
+        margin-right: 38px;
+        margin-top: 23px;
     }
     .x {
         position: relative;

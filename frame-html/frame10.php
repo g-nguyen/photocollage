@@ -4,33 +4,33 @@
 <head>
     <title>frame10</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-    <script type="text/javascript" src="https://ccsqv2.dev.jp/coco-collage.js"></script>
+    <script type="text/javascript" src="https://cqv3.dev.jp/coco-collage.js"></script>
     <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
 </head>
 <style type="text/css">
     #img {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         border: 1px solid;
         margin-left: auto;
         margin-right: auto;
     }
     #a {
-        width: 164px;
-        height: 500px;
+        width: 97px;
+        height: 300px;
         background-color: #FFC0CB;
         float: left;
     }
     #b{
-        width: 163px;
-        height: 500px;
+        width: 96px;
+        height: 300px;
         background-color: #DDA0DD;
         float: right;
         border-left: solid 5px #F0F8FF;
     }
     #c{
-        width: 163px;
-        height: 500px;
+        width: 97px;
+        height: 300px;
         background-color: #B0E0E6;
         float: right;
         border-left: solid 5px #F0F8FF;

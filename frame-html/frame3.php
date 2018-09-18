@@ -5,40 +5,40 @@
     <title>frame3</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
-    <script type="text/javascript" src="https://ccsqv2.dev.jp/coco-collage.js"></script>
+    <script type="text/javascript" src="https://cqv3.dev.jp/coco-collage.js"></script>
 </head>
 <style type="text/css">
     #img {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         border: 1px solid;
         margin-left: auto;
         margin-right: auto;
     }
     #a {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         background-color: #FFC0CB;
         float: left;
     }
     #b {
-        width: 295px;
-        height: 200px;
+        width: 195px;
+        height: 100px;
         background-color: #ADD8E6;
         float: right;
         border-left: solid 5px #F0F8FF;
     }
     #c {
-        width: 295px;
-        height: 295px;
+        width: 195px;
+        height: 195px;
         background-color: #FFC0CB;
         float: right;
         border-left: solid 5px #F0F8FF;
         border-top: solid 5px #F0F8FF;
     }
     #d {
-        width: 200px;
-        height: 295px;
+        width: 100px;
+        height: 195px;
         background-color: #ADD8E6;
         float: right;
         border-top: solid 5px #F0F8FF;
