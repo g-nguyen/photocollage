@@ -37,7 +37,7 @@
                 var image = new Image();
                 image.id = "pic";
                 image.src = document.getElementById('can').toDataURL();
-                $('body').append(image);
+                //$('body').append(image);
                 $('body').append("<a href='" + image.src +"' download='image.png'> DownLoad Image </a>")
                 canvas.remove();
             }
